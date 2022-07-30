@@ -1,0 +1,17 @@
+{
+    "Nav": {
+        "About": "About",
+        "Wrok": "Work",
+        "Contact": "Contact"
+    },
+    "Home": {
+        "fName": "Carlos",
+        "lName": "Jiménez",
+        "llname":"Romero",
+        "title": "FullStack Dev."
+    },
+    "About": {
+        "Title": "About",
+        "Content": "Hola! mi nombre es Carlos Jiménez y mi pasion es desarrollar aplicaciones web, tanto del lado del back end como del front.\n\nHe tomado diversos cursos de desarrollo web y me encanta llevar a la practica lo aprendido y  siempre voy por mas. He trabajado en diversos proyectos personales, lo cual me ha permitido obtener conocimientos en tecnologias como: React js, Node js, JavaScripd, Express entre otras, de igual forma me gusta diseñar en illustrator en mis tiempos libres. Ah! y soy de México para el mundo!"
+    }
+}

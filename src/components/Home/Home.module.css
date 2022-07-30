@@ -1,0 +1,184 @@
+.mainCon {
+    width: 70%;
+    margin: 4.4rem auto;
+    min-height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Main Name configutation */
+
+.infoCon {
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spanCon {
+    font-size: 7rem;
+}
+.spanCon span {
+    /* border: 2px solid yellow; */
+    display: block;
+    line-height: 1;
+    position: relative;
+    color: rgb(237, 237, 237);
+}
+
+.spanCon span:nth-child(2) {
+    margin-left: 5rem;
+}
+
+.spanCon span:nth-child(3) {
+    margin-left: 10rem;
+}
+
+
+.spanCon span:nth-child(1)::before {
+   background: linear-gradient(30deg, rgba(226,216,32,1) 0%, rgba(226,216,32,1) 22%, rgba(19,234,223,1) 42%);
+    position: absolute;
+    inset: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content:'Carlos';
+    opacity: 1;
+    animation: animate 9s infinite;
+    animation-delay: 0s;
+}
+.spanCon span:nth-child(2)::before {
+    background: linear-gradient(30deg, rgba(226,216,32,1) 0%, rgba(226,216,32,1) 26%, rgba(19,234,223,1) 57%);
+    position: absolute;
+    inset: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content:'Jiménez';
+    animation: animate 9s infinite;
+    animation-delay: 3.33s;
+}
+.spanCon span:nth-child(3)::before {
+    background: linear-gradient(30deg, rgba(226,216,32,1) 0%, rgba(226,216,32,1) 26%, rgba(19,234,223,1) 57%);
+    position: absolute;
+    inset: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content:'Romero';
+    animation: animate 9s infinite;
+    animation-delay: 6.66s;
+}
+
+@keyframes animate {
+    0%, 16.66%, 100% {
+        opacity: 1;
+    }
+    33.333%, 83.333% {
+        opacity: 0;
+    }
+}
+
+/*Title*/
+.title {
+    margin: 2rem auto;
+    color: var(--main-ble);
+}
+
+
+/* Photo configuration */
+.photoCon {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoCon img {
+    width: 35rem;
+}
+
+/*Media Queris*/
+
+@media screen and (max-width: 1500px) {
+    .mainCon{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1320px) {
+    .mainCon{
+        width: 90%;
+    }
+    .photoCon {
+        width: 20%;
+        margin-right:  13rem;
+    }
+    .infoCon {
+        min-width: 522px;
+    }
+    .photoCon img {
+        width: 40rem;
+    }
+    
+}
+@media screen and (max-width: 1070px) {
+    .mainCon{
+        width: 98%;
+    }
+    .photoCon {
+        width: 0%;
+        margin-right:  17rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .photoCon {
+        display: none;
+    }
+    .spanCon {
+        font-size: 5rem;
+        margin: auto;
+    }
+    .mainCon {
+        margin: 2rem 0 10rem 0;
+        background-image: url(../../img/me.png);
+        background-repeat: no-repeat;
+        background-position: center 2.5rem;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .spanCon {
+        font-size: 4rem;
+        margin: 0rem 0 0rem 7rem;
+    }
+    
+    .spanCon{
+        margin-top: 7rem;
+    }
+    .spanCon span:nth-child(2) {
+        margin-left: 3rem;
+    }
+    
+    .spanCon span:nth-child(3) {
+        margin-left: 6rem;
+    }
+    
+}
+
+/* 
+.spanCon {
+    font-size: 7rem;
+    padding: 5px 5px;
+}
+.spanCon span {
+    display: block;
+    line-height: 1;
+    position: relative;
+}
+*/

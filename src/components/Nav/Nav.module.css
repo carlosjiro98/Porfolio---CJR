@@ -1,0 +1,121 @@
+/* Main container */
+.mainCon{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+/* Buttons Container */
+.btnsCon {
+    width: 50%;
+    margin: auto;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Button Configuration */
+.navBtn {
+    width: 18%;
+    padding: 0.5rem;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.navBtn h1 {
+    font-weight: 200;
+    font-size: 1.7rem;
+    color: var(--main-yellow);
+    transition: .5s;
+}
+
+.navBtn:hover h1{
+    color: var(--main-blue);
+}
+
+.navBtn span {
+    position: absolute;
+    background: var(--main-blue);
+    transition: 0.5s;
+}
+
+.navBtn span:nth-child(1) {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+.navBtn span:nth-child(2) {
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+
+.navBtn span:nth-child(3) {
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+.navBtn span:nth-child(4) {
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+.navBtn:hover span:nth-child(1) {
+    left: 0;
+}
+.navBtn:hover span:nth-child(2) {
+    right: 0;
+}
+.navBtn:hover span:nth-child(3) {
+    bottom: 0;
+}
+.navBtn:hover span:nth-child(4) {
+    top: 0;
+}
+
+
+/* Media querys for responsive */
+@media screen and (max-width: 1150px) {
+    .btnsCon{ 
+        width: 60%;
+    }
+    .navBtn h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .btnsCon{ 
+        width: 70%;
+        padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    .navBtn h1 {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .btnsCon{ 
+        width: 90%;
+    }
+    .navBtn h1 {
+        font-size: 1.2rem;
+    }
+}
