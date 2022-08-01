@@ -1,0 +1,53 @@
+.mainCon {
+    /* border: 2px solid yellow; */
+    position: fixed;
+    top: 15rem;
+    left: 7rem;
+}
+
+
+
+.imgCon{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: sticky;
+    top: 5rem;
+}
+
+
+.imgCon img {
+    width: 50px;
+}
+
+
+.animado {
+    animation: sale 1s;
+}
+
+@keyframes sale {
+    0%{
+        transform: translate(-150px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .mainCon {
+        /* border: 2px solid yellow; */
+        position: fixed;
+        top: 15rem;
+        left: 3rem;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .mainCon {
+        display: none;
+    }
+    
+}

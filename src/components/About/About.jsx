@@ -4,13 +4,16 @@ import style from './About.module.css'
 //import text from '../../Texts/textEN.json'
 //photo
 import me from '../../img/me.png'
+import { useSelector } from 'react-redux';
+
 function About () {
     const s = style
     //const t = text.About
-
+    const showA = useSelector((state) => state.showA)
+// ${showA==="1" ? s.animado : ""}
     return(
-        <div className={s.mainCon}>
-
+        <div className={`${s.mainCon}`} style={{opacity: showA}}>
+            
             <div className={s.infoAbout}>
                 <div className={s.infoTitleCon}>
                     <div className={s.circle}></div>
@@ -39,6 +42,17 @@ function About () {
                     </div>
                     <div className={s.tech}>
                         <p>Tecnologies i work with:</p>
+                        <div className={s.techs}>
+                            <div><span>► JavaScript</span></div>
+                            <div><span>► React js</span></div>
+                            <div><span>► Redux</span></div>
+                            <div><span>► Node JS</span></div>
+                            <div><span>► Express</span></div>
+                            <div><span>► Sequelize</span></div>
+                            <div><span>► CSS</span></div>
+                            <div><span>► HTML</span></div>
+                            <div><span>► PostgreSQl</span></div>
+                        </div>
                     </div>
                     <div className={s.btnCon}>
                         <button>Resume</button>

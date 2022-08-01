@@ -2,8 +2,25 @@
     width: 70%;
     min-height: 40rem;
     display: flex;
-    
+    opacity: 0;
+    transition: 0.5s;
+    /* border: 2px solid yellow; */
 }
+
+.animado {
+    animation: sale 1s;
+}
+
+@keyframes sale {
+    0%{
+        transform: translatey(-150px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+
 /*Information container*/
 .infoAbout{
     /* border: 2px solid yellow; */
@@ -30,7 +47,7 @@
 }
 .infoTitleCon h1{
     font-weight: lighter;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--main-yellow);
 }
 
@@ -82,7 +99,10 @@
 }
 
 .tech {
-    height: 30.5%;
+    height: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
 }
 .tech p {
     font-weight: 200;
@@ -107,8 +127,115 @@
     font-size: 2rem;
     font-weight: 400;
     padding-bottom: 2rem;
+    transition: 0.5s;
 }
 .photoBtnCon button:hover {
     background-color: var(--main-yellow);
     color: black;
+}
+
+.techs {
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.techs span {
+    color: var(--main-blue);
+}
+
+/*Media querys -----------------------------------------------*/
+
+@media screen and (max-width: 1600px) {
+    .infoTextCon p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .infoTextCon p {
+        font-size: 1.1rem;
+    }
+    .techs span {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .mainCon {
+        width: 80%;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) {
+    .mainCon {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .mainCon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        width: 100%;
+
+    }
+    .infoAbout{
+        width: 100%;
+    }
+    .infoTextCon{
+        width: 80%;
+    }
+    .photoBtnCon{
+        
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .infoAbout{
+        width: 100%;
+    }
+    .photoBtnCon{
+        
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50rem;
+    }
+    .infoTextCon p {
+        font-size: 1rem;
+    }
+    .PBsecondary{
+
+        width: 100%;
+    }
+    .tech{
+        width: 100%;
+        height: 28%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .techs span {
+        font-size: 0.7rem;
+    }
+    .photoCon{
+        margin: 2rem 0 2rem 0;
+    }
 }

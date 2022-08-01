@@ -1,6 +1,7 @@
 .mainCon {
     width: 70%;
-    margin: 4.4rem auto;
+    margin-top: 4.4rem;
+    margin-bottom: 5rem;
     min-height: 40rem;
     display: flex;
     justify-content: center;
@@ -143,7 +144,7 @@
         margin: auto;
     }
     .mainCon {
-        margin: 2rem 0 10rem 0;
+        margin: 2rem 0 4rem 0;
         background-image: url(../../img/me.png);
         background-repeat: no-repeat;
         background-position: center 2.5rem;

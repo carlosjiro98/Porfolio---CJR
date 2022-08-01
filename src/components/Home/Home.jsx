@@ -5,13 +5,39 @@ import me from '../../img/me.png'
 
 //text
 import text from '../../Texts/textEN.json'
+import { useEffect } from 'react'
+import { useRef } from 'react'
+
+//store
+import { useDispatch } from 'react-redux'
+import { show, showA } from '../../sotre/actions'
 
 function Home () {
     const s = style
     const t = text.Home
+    const mainConRef = useRef()
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        function handleScroll () {
+            const main = mainConRef.current
+            const {bottom} = main.getBoundingClientRect()
+            const tf = bottom <= 130 ? "1" : "0"
+            const aOpacity = bottom <= 400 ? "1" : "0"
+            dispatch(show(tf))
+            dispatch(showA(aOpacity))
+        }
+
+        window.addEventListener("scroll", handleScroll)
+        
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+        // eslint-disable-next-line
+    }, [])
 
     return(
-        <div className={s.mainCon}>
+        <div ref={mainConRef} className={s.mainCon}>
             <div className={s.infoCon}>
                 <h1 className={s.spanCon}>
                     <span>{t.fName}</span>
