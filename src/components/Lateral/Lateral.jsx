@@ -17,9 +17,15 @@ function Lateral () {
     return (
         <div className={`${s.mainCon} `} style={ {opacity: showx} }>
             <div className={`${s.imgCon} ${showx === "1" ? s.animado : s.desanimado}`}>
-                <img src={git} alt="github" onClick={()=>alert("hola")} />
-                <img src={lin} alt="linkedin" />
-                <img src={insta} alt="instagram" />
+                <a href="https://github.com/carlosjiro98" target="_blank" rel="noopener noreferrer">
+                    <img src={git} alt="github" />
+                </a>
+                <a href="https://www.linkedin.com/in/carlos-jimenez-84373823a/" target="_blank" rel="noopener noreferrer">
+                    <img src={lin} alt="linkedin" />
+                </a>
+                <a href="https://www.instagram.com/cjr_off/" target="_blank" rel="noopener noreferrer">
+                    <img src={insta} alt="instagram" />
+                </a>
             </div>
         </div>
     )

@@ -1,7 +1,6 @@
 .mainCon {
     width: 70%;
     display: flex;
-    opacity: 0;
     transition: 0.5s;
     transition: 1s;
     padding-top: 3rem;
@@ -170,7 +169,7 @@
 @media screen and (max-width: 900px) {
     .mainCon {
         width: 100%;
-        margin-bottom: 2rem;
+        
     }
     
 }

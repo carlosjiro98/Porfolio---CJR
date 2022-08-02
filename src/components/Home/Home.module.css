@@ -137,8 +137,13 @@
 }
 
 @media screen and (max-width: 900px) {
-    .mainCon{
+    .mainCon {
         min-height: 40rem;
+        margin: 15rem 0 4rem 0;
+        background-image: url(../../img/me.png);
+        background-repeat: no-repeat;
+        background-position: center 2.5rem;
+        background-size: contain;
     }
     .photoCon {
         display: none;
@@ -146,28 +151,24 @@
     .spanCon {
         font-size: 5rem;
         margin: auto;
+        margin-top: 11rem;
     }
-    .mainCon {
-        margin: 2rem 0 4rem 0;
-        background-image: url(../../img/me.png);
-        background-repeat: no-repeat;
-        background-position: center 2.5rem;
-        background-size: cover;
-    }
+    
 }
 
 @media screen and (max-width: 500px) {
     .mainCon{
         width: 100%;
+        min-height: 40rem;
+        margin: 3rem 0 4rem 0;
+        background-position: center 2.5rem;
+        background-size: cover;
     }
 
     .spanCon {
         font-size: 4rem;
-        margin: 0rem 0 0rem 7rem;
-    }
-    
-    .spanCon{
-        margin-top: 7rem;
+        margin: 5rem 0 0rem 7rem;
+        
     }
     .spanCon span:nth-child(2) {
         margin-left: 3rem;

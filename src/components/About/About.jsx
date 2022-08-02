@@ -10,7 +10,7 @@ function About () {
     const s = style
     //const t = text.About
     const showA = useSelector((state) => state.showA)
-// ${showA==="1" ? s.animado : ""}
+// ${showA==="1" ? s.animado : ""}     style={{opacity: showA}}
     return(
         <div id='about' className={`${s.mainCon}`} style={{opacity: showA}}>
             
@@ -54,9 +54,11 @@ function About () {
                             <div><span>► PostgreSQl</span></div>
                         </div>
                     </div>
-                    <div className={s.btnCon}>
-                        <button>Resume</button>
-                    </div>
+                    <a href="./resume" target="_blank" rel="noopener noreferrer">
+                        <div className={s.btnCon}>
+                            <button>Resume</button>
+                        </div>
+                    </a>
                 </div>
                 
                 
