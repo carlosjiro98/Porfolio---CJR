@@ -8,6 +8,7 @@ import Home from '../Home/Home'
 import Contact from '../Contact/Contact'
 import About from '../About/About'
 import Lateral from '../Lateral/Lateral'
+import Footer from '../Footer/Footer'
 
 
 function Layout () {
@@ -19,6 +20,7 @@ function Layout () {
             <Work />
             <Contact />
             <Lateral />
+            <Footer />
         </div>
     );
 }

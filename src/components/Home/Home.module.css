@@ -1,8 +1,7 @@
 .mainCon {
     width: 70%;
-    margin-top: 4.4rem;
-    margin-bottom: 5rem;
-    min-height: 40rem;
+    margin-top: 7rem;
+    margin-bottom: 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,9 +103,11 @@
 
 /*Media Queris*/
 
+
 @media screen and (max-width: 1500px) {
     .mainCon{
         width: 80%;
+        
     }
 }
 @media screen and (max-width: 1320px) {
@@ -136,6 +137,9 @@
 }
 
 @media screen and (max-width: 900px) {
+    .mainCon{
+        min-height: 40rem;
+    }
     .photoCon {
         display: none;
     }
@@ -153,6 +157,9 @@
 }
 
 @media screen and (max-width: 500px) {
+    .mainCon{
+        width: 100%;
+    }
 
     .spanCon {
         font-size: 4rem;

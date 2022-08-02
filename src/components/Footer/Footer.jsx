@@ -1,7 +1,12 @@
+//styles
+import styles from './Footer.module.css'
+
 function Footer () {
+    const s = styles
+
     return (
-        <div>
-            <h1>Footer</h1>
+        <div className={s.mainCon}>
+            <p>⋆ Desing & build by Carlos A. Jimenez Romero ⋆</p>
         </div>
     )
 }

@@ -21,8 +21,12 @@
 }
 
 /* Button Configuration */
-.navBtn {
+a {
     width: 18%;
+    text-decoration: none;
+}
+.navBtn {
+    
     padding: 0.5rem;
     display: grid;
     place-content: center;

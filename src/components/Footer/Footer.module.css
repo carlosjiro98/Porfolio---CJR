@@ -1,0 +1,10 @@
+.mainCon {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainCon p {
+    font-weight: 200;
+    color: var(--main-yellow);
+}

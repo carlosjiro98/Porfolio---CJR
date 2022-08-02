@@ -8,7 +8,7 @@ import three from '../../img/3.png'
 function Work () {
     const s = style
     return(
-        <div className={s.mainCon}>
+        <div className={s.mainCon} id="work">
             
             <div className={s.titleCon}>
                 <div className={s.circle}></div>

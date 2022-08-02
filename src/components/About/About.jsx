@@ -12,7 +12,7 @@ function About () {
     const showA = useSelector((state) => state.showA)
 // ${showA==="1" ? s.animado : ""}
     return(
-        <div className={`${s.mainCon}`} style={{opacity: showA}}>
+        <div id='about' className={`${s.mainCon}`} style={{opacity: showA}}>
             
             <div className={s.infoAbout}>
                 <div className={s.infoTitleCon}>

@@ -22,8 +22,8 @@ function Home () {
         function handleScroll () {
             const main = mainConRef.current
             const {bottom} = main.getBoundingClientRect()
-            const tf = bottom <= 130 ? "1" : "0"
-            const aOpacity = bottom <= 400 ? "1" : "0"
+            const tf = bottom <= 330 ? "1" : "0"
+            const aOpacity = bottom <= 500 ? "1" : "0"
             dispatch(show(tf))
             dispatch(showA(aOpacity))
         }
