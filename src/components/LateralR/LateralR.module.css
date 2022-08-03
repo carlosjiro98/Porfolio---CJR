@@ -1,0 +1,46 @@
+.mainCon {
+    /* border: 2px solid yellow; */
+    position: fixed;
+    top: 17rem;
+    right: 7rem;
+}
+
+
+.mailCon p {
+    writing-mode: vertical-lr;
+    letter-spacing: 2px;
+    color: var(--main-yellow);
+    font-size: 1.5rem;
+}
+.mainCon:hover p {
+    color: var(--main-blue);
+}
+
+.animado {
+    animation: sale 1s;
+}
+
+@keyframes sale {
+    0%{
+        transform: translate(150px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mainCon {
+        /* border: 2px solid yellow; */
+        position: fixed;
+        top: 15rem;
+        right: 3rem;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .mainCon {
+        display: none;
+    }
+    
+}

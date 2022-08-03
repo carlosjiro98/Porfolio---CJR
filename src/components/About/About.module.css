@@ -121,6 +121,9 @@
     padding-bottom: 2rem;
     transition: 0.5s;
 }
+.PBsecondary a {
+    width: 10rem;
+}
 .photoBtnCon button:hover {
     background-color: var(--main-yellow);
     color: black;

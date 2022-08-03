@@ -5,10 +5,13 @@ import one from '../../img/1.png'
 import two from '../../img/2.png'
 import three from '../../img/3.png'
 
+import { useSelector } from 'react-redux';
+
 function Work () {
+    const showW = useSelector((state) => state.showW)
     const s = style
     return(
-        <div className={s.mainCon} id="work">
+        <div className={s.mainCon} id="work"  style={{opacity: showW}}>
             
             <div className={s.titleCon}>
                 <div className={s.circle}></div>

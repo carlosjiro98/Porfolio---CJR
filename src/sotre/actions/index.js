@@ -18,3 +18,15 @@ export function showA (tf) {
         payload: tf
     }
 }
+export function showW (tf) {
+    return {
+        type: "showW",
+        payload: tf
+    }
+}
+export function showC (tf) {
+    return {
+        type: "showC",
+        payload: tf
+    }
+}

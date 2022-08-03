@@ -10,7 +10,7 @@ import { useRef } from 'react'
 
 //store
 import { useDispatch } from 'react-redux'
-import { show, showA } from '../../sotre/actions'
+import { show, showA, showW, showC } from '../../sotre/actions'
 
 function Home () {
     const s = style
@@ -24,8 +24,12 @@ function Home () {
             const {bottom} = main.getBoundingClientRect()
             const tf = bottom <= 330 ? "1" : "0"
             const aOpacity = bottom <= 500 ? "1" : "0"
+            const wOpacity = bottom <= -200 ? "1" : "0"
+            const cOpacity = bottom <= -900 ? "1" : "0"
             dispatch(show(tf))
             dispatch(showA(aOpacity))
+            dispatch(showW(wOpacity))
+            dispatch(showC(cOpacity))
         }
 
         window.addEventListener("scroll", handleScroll)

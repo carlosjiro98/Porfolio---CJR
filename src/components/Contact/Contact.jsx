@@ -4,13 +4,16 @@ import styles from './Contact.module.css'
 //img´s
 import gitB from '../../img/gitB.svg'
 import inB from '../../img/inB.svg'
-import instaB from '../../img/instaB.svg'    
+import instaB from '../../img/instaB.svg'
+
+import { useSelector } from 'react-redux';    
 
 function Contact () {
+    const showC = useSelector((state) => state.showC)
     const s = styles;
 
     return(
-        <div className={s.mainCon} id="contact">
+        <div className={s.mainCon} id="contact" style={{opacity: showC}}>
             {/* ------------------------------------------- */}
             <div className={s.titleCon}>
                 <div className={s.circle}></div>
@@ -30,12 +33,20 @@ function Contact () {
                             </p>
                         </div>
                         <div className={s.cardRedes}>
-                            <img src={gitB} alt="github" />
-                            <img src={inB} alt="likedin" />
-                            <img src={instaB} alt="instagram" />
+                            <a href="https://github.com/carlosjiro98" target="_blank" rel="noopener noreferrer">
+                                <img src={gitB} alt="github" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/carlos-jimenez-84373823a/" target="_blank" rel="noopener noreferrer">
+                                <img src={inB} alt="linkedin" />
+                            </a>
+                            <a href="https://www.instagram.com/cjr_off/" target="_blank" rel="noopener noreferrer">
+                                <img src={instaB} alt="instagram" />
+                            </a>
                         </div>
                         <div className={s.sayHi}>
-                            <button>Saludame</button>
+                            <a href="mailto:carlos.jiro.dev@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <button>Saludame</button>
+                            </a>
                         </div>
                     </div>
 
