@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.a835394c.css",
-    "main.js": "/static/js/main.310fcaed.js",
-    "static/media/CV_Spanish.pdf": "/static/media/CV_Spanish.58a3ca46c5837af9fd56.pdf",
-    "static/media/me.png": "/static/media/me.1b2b65890bf340ff404e.png",
-    "static/media/2.png": "/static/media/2.211ee4fa84a488d1facb.png",
-    "static/media/1.png": "/static/media/1.6faa2c470942c1ee94a3.png",
-    "static/media/3.png": "/static/media/3.f5f0b36f394848bf32c7.png",
-    "static/media/insta.svg": "/static/media/insta.491c5672e2e272d55a93f2f106606fab.svg",
-    "static/media/instaB.svg": "/static/media/instaB.309927bc089f634ec1e78f69a5caa4ab.svg",
-    "static/media/git.svg": "/static/media/git.57448af144da01e61ac0901ded3de8b3.svg",
-    "static/media/gitB.svg": "/static/media/gitB.0fa17453d272b0de6639b02201abefa1.svg",
-    "index.html": "/index.html",
-    "static/media/in.svg": "/static/media/in.3ecc12d53f4f2312f0d49b3897047ded.svg",
-    "static/media/inB.svg": "/static/media/inB.ea8d399e3a8a4f2d66ce09c2dc337354.svg",
-    "main.a835394c.css.map": "/static/css/main.a835394c.css.map",
-    "main.310fcaed.js.map": "/static/js/main.310fcaed.js.map"
+    "main.css": "/Porfolio%20CJR/static/css/main.f71181f9.css",
+    "main.js": "/Porfolio%20CJR/static/js/main.1ccd6067.js",
+    "static/media/CV_Spanish.pdf": "/Porfolio%20CJR/static/media/CV_Spanish.58a3ca46c5837af9fd56.pdf",
+    "static/media/me.png": "/Porfolio%20CJR/static/media/me.1b2b65890bf340ff404e.png",
+    "static/media/2.png": "/Porfolio%20CJR/static/media/2.211ee4fa84a488d1facb.png",
+    "static/media/1.png": "/Porfolio%20CJR/static/media/1.6faa2c470942c1ee94a3.png",
+    "static/media/3.png": "/Porfolio%20CJR/static/media/3.f5f0b36f394848bf32c7.png",
+    "static/media/insta.svg": "/Porfolio%20CJR/static/media/insta.491c5672e2e272d55a93f2f106606fab.svg",
+    "static/media/instaB.svg": "/Porfolio%20CJR/static/media/instaB.309927bc089f634ec1e78f69a5caa4ab.svg",
+    "static/media/git.svg": "/Porfolio%20CJR/static/media/git.57448af144da01e61ac0901ded3de8b3.svg",
+    "static/media/gitB.svg": "/Porfolio%20CJR/static/media/gitB.0fa17453d272b0de6639b02201abefa1.svg",
+    "index.html": "/Porfolio%20CJR/index.html",
+    "static/media/in.svg": "/Porfolio%20CJR/static/media/in.3ecc12d53f4f2312f0d49b3897047ded.svg",
+    "static/media/inB.svg": "/Porfolio%20CJR/static/media/inB.ea8d399e3a8a4f2d66ce09c2dc337354.svg",
+    "main.f71181f9.css.map": "/Porfolio%20CJR/static/css/main.f71181f9.css.map",
+    "main.1ccd6067.js.map": "/Porfolio%20CJR/static/js/main.1ccd6067.js.map"
   },
   "entrypoints": [
-    "static/css/main.a835394c.css",
-    "static/js/main.310fcaed.js"
+    "static/css/main.f71181f9.css",
+    "static/js/main.1ccd6067.js"
   ]
 }
